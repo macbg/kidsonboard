@@ -1,13 +1,12 @@
-.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+.child-car-seat-selector .ui-state-default, .child-car-seat-selector .ui-widget-content .ui-state-default, .child-car-seat-selector .ui-widget-header .ui-state-default {
     border: 1px solid #c5c5c5;
     background: #f6f6f6;
-    color: #454545;
 }
-.ui-slider-horizontal .ui-slider-handle {
+.child-car-seat-selector .ui-slider-horizontal .ui-slider-handle {
     top: -.3em;
     margin-left: -.6em;
 }
-.ui-slider .ui-slider-handle {
+.child-car-seat-selector .ui-slider .ui-slider-handle {
     position: absolute;
     z-index: 2;
     width: 1.2em;
@@ -16,16 +15,31 @@
     -ms-touch-action: none;
     touch-action: none;
 }
-.ui-corner-all {
+.child-car-seat-selector .ui-corner-all {
     border-radius: 3px;
 }
-.ui-widget-content {
+.child-car-seat-selector .ui-widget-content {
     border: 1px solid #dddddd;
     background: #ffffff;
 }
-.ui-slider-horizontal {
+.child-car-seat-selector .ui-slider-horizontal {
     height: .8em;
 }
-.ui-slider {
+.child-car-seat-selector .ui-slider {
     position: relative;
+}
+
+.child-car-seat-selector input[type="text"] {
+    background: transparent;
+    border:0;
+    font-size: initial;
+    font-weight:bold;
+}
+
+.child-car-seat-selector .widget {
+    text-align: center;
+}
+
+.child-car-seat-selector .widget button {
+    margin-top: 20px;
 }

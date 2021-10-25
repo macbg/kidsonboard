@@ -29,21 +29,21 @@ function seatselector_func($atts)
         <div style="max-width: 350px;display: block;margin: auto;">
             <p>
                 <label for="age">Възраст:</label>
-                <input type="text" id="age" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                <input type="text" id="age" readonly>
             </p>
 
             <div id="age-slider"></div>
 
             <p>
                 <label for="weight">Тегло (кг):</label>
-                <input type="text" id="weight" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                <input type="text" id="weight" readonly>
             </p>
 
             <div id="weight-slider"></div>
 
             <p>
                 <label for="height">Ръст (см):</label>
-                <input type="text" id="height" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                <input type="text" id="height" readonly>
             </p>
 
             <div id="height-slider"></div>
