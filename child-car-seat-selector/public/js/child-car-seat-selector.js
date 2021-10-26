@@ -33,8 +33,8 @@
     });
     $("#height").val($("#height-slider").slider("value"));
 
-    $(".widget button").button();
-    $("button").click(function(event) {
+    $(".child-car-seat-selector .widget button").button();
+    $(".child-car-seat-selector button").click(function(event) {
       event.preventDefault();
 
       var results = [{

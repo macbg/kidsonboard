@@ -17,7 +17,6 @@ $plugin_name = "child-car-seat-selector";
 $plugin_version = "1.0.0";
 
 wp_enqueue_style( $plugin_name, plugin_dir_url( __FILE__ ) . 'public/css/child-car-seat-selector.css', array(), $plugin_version, 'all' );
-//wp_enqueue_script( $plugin_name, plugin_dir_url( __FILE__ ) . 'public/js/jquery-ui-1.11.4.js', array( 'jquery' ), $plugin_version, false );
 wp_enqueue_script( $plugin_name, plugin_dir_url( __FILE__ ) . 'public/js/child-car-seat-selector.js', array( 'jquery', 'jquery-ui-button', 'jquery-ui-slider' ), $plugin_version, true );
 
 
@@ -26,7 +25,7 @@ function seatselector_func($atts)
 {
     return 
     '<div class="child-car-seat-selector">
-        <div style="max-width: 350px;display: block;margin: auto;">
+        <div class="inner-container">
             <p>
                 <label for="age">Възраст:</label>
                 <input type="text" id="age" readonly>
