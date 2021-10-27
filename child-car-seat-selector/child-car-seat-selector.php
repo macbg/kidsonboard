@@ -23,8 +23,9 @@ wp_enqueue_script( $plugin_name, plugin_dir_url( __FILE__ ) . 'public/js/child-c
 //[seatselector]
 function seatselector_func($atts)
 {
+    $options = get_option( 'ccss_options' );
     return 
-    '<div class="child-car-seat-selector">
+    '<div class="child-car-seat-selector" data-page-url-slugs=\''.json_encode($options).'\'>
         <div class="inner-container">
             <p>
                 <label for="age">Възраст:</label>
@@ -149,7 +150,6 @@ add_action( 'admin_init', 'ccss_settings_init' );
  */
 function ccss_section_main_callback( $args ) { }
 
-////
 /**
  * Main section field callback function.
  *
@@ -167,9 +167,6 @@ function ccss_field_cb( $args ) {
     <input id="<?php echo esc_attr( $args['label_for'] ); ?>" value="<?php echo esc_attr( $options[ $args['label_for'] ] ); ?>" name="ccss_options[<?php echo esc_attr( $args['label_for'] ); ?>]"/>
     <?php
 }
-////
-
-///
 
 /**
  * Add the top level menu page.
