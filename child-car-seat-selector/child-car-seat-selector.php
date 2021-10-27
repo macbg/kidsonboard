@@ -47,8 +47,8 @@ function seatselector_func($atts)
 
             <div id="height-slider"></div>
 
-            <div class="widget" style="text-align: center;">
-                <button style="margin-top: 20px;">Покажи препоръка</button>
+            <div class="widget">
+                <button>Покажи препоръка</button>
             </div>
         </div>
     </div>';
