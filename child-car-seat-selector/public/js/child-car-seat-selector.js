@@ -38,7 +38,7 @@
       event.preventDefault();
 
       var results = [{
-          "url": "bebeshki-stol",
+          "url": "ccss_field_page_1",
           "age": {
             "min": 0,
             "max": 1.5
@@ -53,7 +53,7 @@
           }
         },
         {
-          "url": "stolche-za-malki-deca-obarnato-nazad",
+          "url": "ccss_field_page_2",
           "age": {
             "min": 1.5,
             "max": 12
@@ -68,7 +68,7 @@
           }
         },
         {
-          "url": "stolche-za-malki-deca-obarnato-nazad",
+          "url": "ccss_field_page_2",
           "age": {
             "min": 1.5,
             "max": 12
@@ -83,7 +83,7 @@
           }
         },
         {
-          "url": "stolche-za-malki-deca-ili-dopalnitelna-sedalka",
+          "url": "ccss_field_page_3",
           "age": {
             "min": 1.5,
             "max": 12
@@ -98,7 +98,7 @@
           }
         },
         {
-          "url": "stol-za-kolani",
+          "url": "ccss_field_page_4",
           "age": {
             "min": 1.5,
             "max": 12
@@ -113,7 +113,7 @@
           }
         },
         {
-          "url": "stol-za-kolani",
+          "url": "ccss_field_page_4",
           "age": {
             "min": 1.5,
             "max": 12
@@ -137,12 +137,13 @@
         return (r.age.min <= age && r.age.max >= age) && (r.weight.min <= weight && r.weight.max >= weight) && (r.height.min <= height && r.height.max >= weight)
       });
 
-      var url = "svarjete-se-s-nas";
+      var url_key = "ccss_field_default_page";
       if (f_results.length > 0) {
-        url = f_results.pop().url;
+        url_key = f_results.pop().url;
       }
 
-      //window.location = "./" + url + "/index.html";
+      var url = $(".child-car-seat-selector").data("page-url-slugs")[url_key];
+
       window.location = "./" + url + "/";
     });
 
