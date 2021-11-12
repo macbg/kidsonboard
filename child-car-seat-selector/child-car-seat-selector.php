@@ -82,6 +82,9 @@ function ccss_settings_init() {
         'ccss_section_main',
         array(
             'label_for'         => 'ccss_field_default_page',
+            'hint'              =>  [
+                                        'Displayed when no matching seat is found.'
+                                    ]
         )
     );
 
@@ -95,6 +98,9 @@ function ccss_settings_init() {
         'ccss_section_main',
         array(
             'label_for'         => 'ccss_field_page_1',
+            'hint'              =>  [
+                                        'Displayed when <b>age</b> is between <b>0</b> and <b>1.5</b> years, <b>weight</b> is between <b>0</b> and <b>15</b> kg, <b>height</b> is between <b>40</b> and <b>84</b> cm.'
+                                    ]
         )
     );
 
@@ -108,6 +114,10 @@ function ccss_settings_init() {
         'ccss_section_main',
         array(
             'label_for'         => 'ccss_field_page_2',
+            'hint'              =>  [
+                                        'Displayed when <b>age</b> is between <b>1.5</b> and <b>12</b> years, <b>weight</b> is between <b>0</b> and <b>18</b> kg, <b>height</b> is between <b>84</b> and <b>105</b> cm.',
+                                        'Displayed when <b>age</b> is between <b>1.5</b> and <b>12</b> years, <b>weight</b> is between <b>0</b> and <b>13</b> kg, <b>height</b> is between <b>105</b> and <b>125</b> cm.'
+                                    ]
         )
     );
 
@@ -121,6 +131,9 @@ function ccss_settings_init() {
         'ccss_section_main',
         array(
             'label_for'         => 'ccss_field_page_3',
+            'hint'              =>  [
+                                        'Displayed when <b>age</b> is between <b>1.5</b> and <b>12</b> years, <b>weight</b> is between <b>13</b> and <b>25</b> kg, <b>height</b> is between <b>105</b> and <b>125</b> cm.'
+                                    ]
         )
     );
 
@@ -134,6 +147,10 @@ function ccss_settings_init() {
         'ccss_section_main',
         array(
             'label_for'         => 'ccss_field_page_4',
+            'hint'              =>  [
+                                        'Displayed when <b>age</b> is between <b>1.5</b> and <b>12</b> years, <b>weight</b> is between <b>25</b> and <b>36</b> kg, <b>height</b> is between <b>105</b> and <b>125</b> cm.',
+                                        'Displayed when <b>age</b> is between <b>1.5</b> and <b>12</b> years, <b>weight</b> is between <b>18</b> and <b>36</b> kg, <b>height</b> is between <b>125</b> and <b>150</b> cm.'
+                                    ]
         )
     );
 }
@@ -166,6 +183,9 @@ function ccss_field_cb( $args ) {
     ?>
     <input id="<?php echo esc_attr( $args['label_for'] ); ?>" value="<?php echo esc_attr( $options[ $args['label_for'] ] ); ?>" name="ccss_options[<?php echo esc_attr( $args['label_for'] ); ?>]"/>
     <?php
+    foreach ($args['hint'] as $hint) {
+        echo '<p>'.$hint.'</p>';
+    }
 }
 
 /**
