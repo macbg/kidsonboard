@@ -147,7 +147,7 @@ function ccss_settings_init() {
         array(
             'label_for'         => 'ccss_field_page_4',
             'hint'              =>  [
-                                        'Displayed when <b>age</b> is between <b>4</b> and <b>12</b> years, <b>weight</b> is between <b>18</b> and <b>36</b> kg, <b>height</b> is between <b>125</b> and <b>150</b> cm.'
+                                        'Displayed when <b>age</b> is between <b>4</b> and <b>12</b> years, <b>weight</b> is between <b>18</b> and <b>36</b> kg, <b>height</b> is between <b>125</b> and <b>140</b> cm.'
                                     ]
         )
     );
@@ -179,7 +179,7 @@ function ccss_settings_init() {
         array(
             'label_for'         => 'ccss_field_page_6',
             'hint'              =>  [
-                                        'Displayed when <b>age</b> is between <b>4</b> and <b>12</b> years, <b>weight</b> is between <b>25</b> and <b>40</b> kg, <b>height</b> is between <b>155</b> and <b>160</b> cm.'
+                                        'Displayed when <b>age</b> is between <b>4</b> and <b>12</b> years, <b>weight</b> is between <b>25</b> and <b>40</b> kg, <b>height</b> is between <b>150</b> and <b>160</b> cm.'
                                     ]
         )
     );
