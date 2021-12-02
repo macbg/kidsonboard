@@ -56,30 +56,15 @@
           "url": "ccss_field_page_2",
           "age": {
             "min": 1.5,
-            "max": 12
+            "max": 3.5
           },
           "weight": {
-            "min": 0,
+            "min": 9,
             "max": 18
           },
           "height": {
             "min": 84,
-            "max": 105
-          }
-        },
-        {
-          "url": "ccss_field_page_2",
-          "age": {
-            "min": 1.5,
-            "max": 12
-          },
-          "weight": {
-            "min": 0,
-            "max": 13
-          },
-          "height": {
-            "min": 105,
-            "max": 125
+            "max": 100
           }
         },
         {
@@ -89,33 +74,18 @@
             "max": 12
           },
           "weight": {
-            "min": 13,
-            "max": 25
-          },
-          "height": {
-            "min": 105,
-            "max": 125
-          }
-        },
-        {
-          "url": "ccss_field_page_4",
-          "age": {
-            "min": 1.5,
-            "max": 12
-          },
-          "weight": {
-            "min": 25,
+            "min": 15,
             "max": 36
           },
           "height": {
-            "min": 105,
+            "min": 100,
             "max": 125
           }
         },
         {
           "url": "ccss_field_page_4",
           "age": {
-            "min": 1.5,
+            "min": 4,
             "max": 12
           },
           "weight": {
@@ -125,6 +95,36 @@
           "height": {
             "min": 125,
             "max": 150
+          }
+        },
+        {
+          "url": "ccss_field_page_5",
+          "age": {
+            "min": 4,
+            "max": 12
+          },
+          "weight": {
+            "min": 18,
+            "max": 36
+          },
+          "height": {
+            "min": 140,
+            "max": 150
+          }
+        },
+        {
+          "url": "ccss_field_page_6",
+          "age": {
+            "min": 4,
+            "max": 12
+          },
+          "weight": {
+            "min": 25,
+            "max": 40
+          },
+          "height": {
+            "min": 155,
+            "max": 160
           }
         }
       ]

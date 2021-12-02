@@ -115,8 +115,7 @@ function ccss_settings_init() {
         array(
             'label_for'         => 'ccss_field_page_2',
             'hint'              =>  [
-                                        'Displayed when <b>age</b> is between <b>1.5</b> and <b>12</b> years, <b>weight</b> is between <b>0</b> and <b>18</b> kg, <b>height</b> is between <b>84</b> and <b>105</b> cm.',
-                                        'Displayed when <b>age</b> is between <b>1.5</b> and <b>12</b> years, <b>weight</b> is between <b>0</b> and <b>13</b> kg, <b>height</b> is between <b>105</b> and <b>125</b> cm.'
+                                        'Displayed when <b>age</b> is between <b>1.5</b> and <b>3.5</b> years, <b>weight</b> is between <b>9</b> and <b>18</b> kg, <b>height</b> is between <b>84</b> and <b>100</b> cm.'
                                     ]
         )
     );
@@ -132,7 +131,7 @@ function ccss_settings_init() {
         array(
             'label_for'         => 'ccss_field_page_3',
             'hint'              =>  [
-                                        'Displayed when <b>age</b> is between <b>1.5</b> and <b>12</b> years, <b>weight</b> is between <b>13</b> and <b>25</b> kg, <b>height</b> is between <b>105</b> and <b>125</b> cm.'
+                                        'Displayed when <b>age</b> is between <b>1.5</b> and <b>12</b> years, <b>weight</b> is between <b>15</b> and <b>36</b> kg, <b>height</b> is between <b>100</b> and <b>125</b> cm.'
                                     ]
         )
     );
@@ -148,8 +147,39 @@ function ccss_settings_init() {
         array(
             'label_for'         => 'ccss_field_page_4',
             'hint'              =>  [
-                                        'Displayed when <b>age</b> is between <b>1.5</b> and <b>12</b> years, <b>weight</b> is between <b>25</b> and <b>36</b> kg, <b>height</b> is between <b>105</b> and <b>125</b> cm.',
-                                        'Displayed when <b>age</b> is between <b>1.5</b> and <b>12</b> years, <b>weight</b> is between <b>18</b> and <b>36</b> kg, <b>height</b> is between <b>125</b> and <b>150</b> cm.'
+                                        'Displayed when <b>age</b> is between <b>4</b> and <b>12</b> years, <b>weight</b> is between <b>18</b> and <b>36</b> kg, <b>height</b> is between <b>125</b> and <b>150</b> cm.'
+                                    ]
+        )
+    );
+
+    // Register a new field in the "ccss_section_main" section, inside the "ccss" page.
+    add_settings_field(
+        'ccss_field_page_5', // As of WP 4.6 this value is used only internally.
+                                // Use $args' label_for to populate the id inside the callback.
+            __( 'Page 5', 'ccss' ),
+        'ccss_field_cb',
+        'ccss',
+        'ccss_section_main',
+        array(
+            'label_for'         => 'ccss_field_page_5',
+            'hint'              =>  [
+                                        'Displayed when <b>age</b> is between <b>4</b> and <b>12</b> years, <b>weight</b> is between <b>18</b> and <b>36</b> kg, <b>height</b> is between <b>140</b> and <b>150</b> cm.'
+                                    ]
+        )
+    );
+
+    // Register a new field in the "ccss_section_main" section, inside the "ccss" page.
+    add_settings_field(
+        'ccss_field_page_6', // As of WP 4.6 this value is used only internally.
+                                // Use $args' label_for to populate the id inside the callback.
+            __( 'Page 6', 'ccss' ),
+        'ccss_field_cb',
+        'ccss',
+        'ccss_section_main',
+        array(
+            'label_for'         => 'ccss_field_page_6',
+            'hint'              =>  [
+                                        'Displayed when <b>age</b> is between <b>4</b> and <b>12</b> years, <b>weight</b> is between <b>25</b> and <b>40</b> kg, <b>height</b> is between <b>155</b> and <b>160</b> cm.'
                                     ]
         )
     );
