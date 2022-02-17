@@ -144,7 +144,7 @@
 
       var url = $(".child-car-seat-selector").data("page-url-slugs")[url_key];
 
-      window.location = "./" + url + "/";
+      window.location = "/" + url + "/";
     });
 
   });
